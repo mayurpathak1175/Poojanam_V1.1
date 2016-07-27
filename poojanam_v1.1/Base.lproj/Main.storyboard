@@ -1,25 +1,101 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Co4-7k-CIY">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Stotram/Songs-->
+        <scene sceneID="mhb-06-kOA">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="Ys5-7b-3fo" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="WPD-pC-dAH"/>
+                        <viewControllerLayoutGuide type="bottom" id="xUs-nn-Qas"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="cqA-LR-JNG">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Stotram/Songs" id="RWL-xk-9kX"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5tj-HU-skR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1011" y="97"/>
+        </scene>
+        <!--Pooja-->
+        <scene sceneID="wvB-Ws-kPo">
+            <objects>
+                <viewController id="GxQ-lJ-T2e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QRp-nC-jKJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="M8i-7N-h83"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cjz-ZX-f1R">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pooja" id="KxV-3u-Kx5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5F-8G-hxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="800"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zur-fp-h49">
+            <objects>
+                <viewController id="RWP-FM-BoQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ktp-2Z-ewT"/>
+                        <viewControllerLayoutGuide type="bottom" id="wX6-BA-oM6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cw4-qk-MEJ">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="syy-AY-9pM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e3j-Ff-HKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="1123"/>
+        </scene>
+        <!--Language-->
+        <scene sceneID="e9a-qu-yel">
+            <objects>
+                <viewController id="Ozg-De-J4X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RW0-cs-zqQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="uBE-5M-17T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Language" id="JMd-Io-h6y">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Language" id="8tU-hy-qId"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbq-Nh-UHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241.5" y="-366"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pyx-yK-xAX">
+            <objects>
+                <tabBarController id="Co4-7k-CIY" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VK8-8Q-CFX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ozg-De-J4X" kind="relationship" relationship="viewControllers" id="3mR-h2-IGd"/>
+                        <segue destination="GxQ-lJ-T2e" kind="relationship" relationship="viewControllers" id="6ab-Kr-oci"/>
+                        <segue destination="Ys5-7b-3fo" kind="relationship" relationship="viewControllers" id="Lcs-Z8-1bC"/>
+                        <segue destination="RWP-FM-BoQ" kind="relationship" relationship="viewControllers" id="4fl-Gp-o0d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRy-EW-IZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241.5" y="316"/>
         </scene>
     </scenes>
 </document>
