@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		DEED65851D4871F000F7184B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED65841D4871F000F7184B /* main.m */; };
 		DEED65881D4871F000F7184B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED65871D4871F000F7184B /* AppDelegate.m */; };
-		DEED658B1D4871F000F7184B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED658A1D4871F000F7184B /* ViewController.m */; };
 		DEED658E1D4871F000F7184B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEED658C1D4871F000F7184B /* Main.storyboard */; };
 		DEED65901D4871F000F7184B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEED658F1D4871F000F7184B /* Assets.xcassets */; };
 		DEED65931D4871F000F7184B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEED65911D4871F000F7184B /* LaunchScreen.storyboard */; };
+		DEED659C1D48906C00F7184B /* languageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED659B1D48906C00F7184B /* languageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +20,12 @@
 		DEED65841D4871F000F7184B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DEED65861D4871F000F7184B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DEED65871D4871F000F7184B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DEED65891D4871F000F7184B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DEED658A1D4871F000F7184B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DEED658D1D4871F000F7184B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEED658F1D4871F000F7184B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEED65921D4871F000F7184B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEED65941D4871F000F7184B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEED659A1D48906C00F7184B /* languageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageViewController.h; sourceTree = "<group>"; };
+		DEED659B1D48906C00F7184B /* languageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = languageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +60,9 @@
 			children = (
 				DEED65861D4871F000F7184B /* AppDelegate.h */,
 				DEED65871D4871F000F7184B /* AppDelegate.m */,
-				DEED65891D4871F000F7184B /* ViewController.h */,
-				DEED658A1D4871F000F7184B /* ViewController.m */,
 				DEED658C1D4871F000F7184B /* Main.storyboard */,
+				DEED659A1D48906C00F7184B /* languageViewController.h */,
+				DEED659B1D48906C00F7184B /* languageViewController.m */,
 				DEED658F1D4871F000F7184B /* Assets.xcassets */,
 				DEED65911D4871F000F7184B /* LaunchScreen.storyboard */,
 				DEED65941D4871F000F7184B /* Info.plist */,
@@ -150,8 +150,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEED658B1D4871F000F7184B /* ViewController.m in Sources */,
 				DEED65881D4871F000F7184B /* AppDelegate.m in Sources */,
+				DEED659C1D48906C00F7184B /* languageViewController.m in Sources */,
 				DEED65851D4871F000F7184B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +299,7 @@
 				DEED65991D4871F000F7184B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
