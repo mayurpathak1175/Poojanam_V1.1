@@ -13,6 +13,8 @@
 		DEED65901D4871F000F7184B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEED658F1D4871F000F7184B /* Assets.xcassets */; };
 		DEED65931D4871F000F7184B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEED65911D4871F000F7184B /* LaunchScreen.storyboard */; };
 		DEED659C1D48906C00F7184B /* languageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED659B1D48906C00F7184B /* languageViewController.m */; };
+		DEED65A51D4C053800F7184B /* poojaListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED65A41D4C053800F7184B /* poojaListViewController.m */; };
+		DEED65A81D4C7FDE00F7184B /* poojaSelectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEED65A71D4C7FDE00F7184B /* poojaSelectedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		DEED65941D4871F000F7184B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEED659A1D48906C00F7184B /* languageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = languageViewController.h; sourceTree = "<group>"; };
 		DEED659B1D48906C00F7184B /* languageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = languageViewController.m; sourceTree = "<group>"; };
+		DEED65A31D4C053800F7184B /* poojaListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poojaListViewController.h; sourceTree = "<group>"; };
+		DEED65A41D4C053800F7184B /* poojaListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poojaListViewController.m; sourceTree = "<group>"; };
+		DEED65A61D4C7FDE00F7184B /* poojaSelectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poojaSelectedViewController.h; sourceTree = "<group>"; };
+		DEED65A71D4C7FDE00F7184B /* poojaSelectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poojaSelectedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,10 @@
 				DEED65861D4871F000F7184B /* AppDelegate.h */,
 				DEED65871D4871F000F7184B /* AppDelegate.m */,
 				DEED658C1D4871F000F7184B /* Main.storyboard */,
+				DEED65A61D4C7FDE00F7184B /* poojaSelectedViewController.h */,
+				DEED65A71D4C7FDE00F7184B /* poojaSelectedViewController.m */,
+				DEED65A31D4C053800F7184B /* poojaListViewController.h */,
+				DEED65A41D4C053800F7184B /* poojaListViewController.m */,
 				DEED659A1D48906C00F7184B /* languageViewController.h */,
 				DEED659B1D48906C00F7184B /* languageViewController.m */,
 				DEED658F1D4871F000F7184B /* Assets.xcassets */,
@@ -150,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEED65A51D4C053800F7184B /* poojaListViewController.m in Sources */,
 				DEED65881D4871F000F7184B /* AppDelegate.m in Sources */,
 				DEED659C1D48906C00F7184B /* languageViewController.m in Sources */,
+				DEED65A81D4C7FDE00F7184B /* poojaSelectedViewController.m in Sources */,
 				DEED65851D4871F000F7184B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

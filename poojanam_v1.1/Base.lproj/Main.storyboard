@@ -22,12 +22,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tj-HU-skR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074.5" y="193"/>
+            <point key="canvasLocation" x="3910.5" y="193"/>
         </scene>
         <!--Pooja-->
         <scene sceneID="wvB-Ws-kPo">
             <objects>
-                <viewController id="GxQ-lJ-T2e" sceneMemberID="viewController">
+                <viewController id="GxQ-lJ-T2e" customClass="poojaListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dL9-S5-OY0"/>
                         <viewControllerLayoutGuide type="bottom" id="0SS-fz-Pfh"/>
@@ -35,13 +35,160 @@
                     <view key="view" contentMode="scaleToFill" id="cjz-ZX-f1R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIj-81-2gD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Pooja" id="XfU-9w-UbU"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="15" width="400" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-hS-HrJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="poojaListCell" id="6tc-6c-Tst">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6tc-6c-Tst" id="Edy-d6-opG">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZeV-5S-tb2" kind="show" id="saC-4E-AH7"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="94" width="400" height="457"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="GxQ-lJ-T2e" id="7bz-Qn-y5e"/>
+                                    <outlet property="delegate" destination="GxQ-lJ-T2e" id="myt-cq-hX5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LIj-81-2gD"/>
+                                <exclude reference="LFA-hS-HrJ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LIj-81-2gD"/>
+                                <include reference="LFA-hS-HrJ"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pooja" id="KxV-3u-Kx5"/>
+                    <navigationItem key="navigationItem" title="Pooja" prompt="Select Pooja from list below" id="055-il-M8M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G5F-8G-hxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="998.99999999999989" y="800"/>
+            <point key="canvasLocation" x="2833.5" y="800"/>
+        </scene>
+        <!--Pooja Selected View Controller-->
+        <scene sceneID="9fO-Wi-1Bn">
+            <objects>
+                <viewController id="ZeV-5S-tb2" customClass="poojaSelectedViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wmt-Bq-4s3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Umf-cB-MIX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XRq-L5-j5j">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2U-N6-ehb">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="146" width="360" height="397"/>
+                                </variation>
+                            </label>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYt-9B-9jU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYI-NN-KbL">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Samagree"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                            <rect key="frame" x="23" y="6" width="77" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="samagreeButtonPressed:" destination="ZeV-5S-tb2" eventType="touchUpInside" id="O6u-QK-uso"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMQ-ZE-7xt">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Pooja vidhi"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="137" y="8" width="87" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="poojaVidhiButtonPressed:" destination="ZeV-5S-tb2" eventType="touchUpInside" id="ehh-Ej-j8a"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pa1-rM-xc3">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" title="Audio"/>
+                                        <variation key="widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="266" y="8" width="46" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="audioButtonPressed:" destination="ZeV-5S-tb2" eventType="touchUpInside" id="zp6-S5-KNf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="dYI-NN-KbL"/>
+                                        <exclude reference="oMQ-ZE-7xt"/>
+                                        <exclude reference="Pa1-rM-xc3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="94" width="360" height="44"/>
+                                    <mask key="subviews">
+                                        <include reference="dYI-NN-KbL"/>
+                                        <include reference="oMQ-ZE-7xt"/>
+                                        <include reference="Pa1-rM-xc3"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="i2U-N6-ehb"/>
+                                <exclude reference="SYt-9B-9jU"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="i2U-N6-ehb"/>
+                                <include reference="SYt-9B-9jU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="audioButton" destination="Pa1-rM-xc3" id="4SZ-dG-v7Z"/>
+                        <outlet property="playingSelectedPoojaLabel" destination="i2U-N6-ehb" id="Uzd-gn-yC5"/>
+                        <outlet property="poojaVidhiButton" destination="oMQ-ZE-7xt" id="da0-Pa-cCO"/>
+                        <outlet property="samagreeButton" destination="dYI-NN-KbL" id="IDa-XH-ltb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UC0-d0-LXr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3603" y="858"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zur-fp-h49">
@@ -150,7 +297,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Hsm-lD-NNb" kind="relationship" relationship="viewControllers" id="51u-Uy-fcX"/>
-                        <segue destination="GxQ-lJ-T2e" kind="relationship" relationship="viewControllers" id="6ab-Kr-oci"/>
+                        <segue destination="EPM-jU-A7g" kind="relationship" relationship="viewControllers" id="2OC-Q2-vMN"/>
                         <segue destination="Ys5-7b-3fo" kind="relationship" relationship="viewControllers" id="Lcs-Z8-1bC"/>
                         <segue destination="RWP-FM-BoQ" kind="relationship" relationship="viewControllers" id="4fl-Gp-o0d"/>
                     </connections>
@@ -177,6 +324,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="004-Sk-7fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1998" y="-665"/>
+        </scene>
+        <!--Pooja-->
+        <scene sceneID="KPh-Vm-fGl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EPM-jU-A7g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pooja" id="AdM-Pb-S1b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="s2u-2z-FCf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GxQ-lJ-T2e" kind="relationship" relationship="rootViewController" id="8Zy-p5-1aJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Avr-SS-jvO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915.5" y="800"/>
         </scene>
     </scenes>
 </document>
